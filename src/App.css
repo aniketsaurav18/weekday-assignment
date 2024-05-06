@@ -1,0 +1,62 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  column-gap: 5rem;
+}
+
+
+.filter-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  margin-top: 3rem;
+}
+
+.jobcard-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  gap: 1rem;
+  margin-top: 12rem;
+}
+
+@media screen and (max-width: 1702px){
+  .jobcard-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1273px){
+  .jobcard-container{
+    grid-template-columns: 1fr 1fr;
+    margin-top: 14rem;
+  }
+}
+
+@media screen and (max-width: 856px){
+
+  .jobcard-container{
+    grid-template-columns: 1fr;
+    margin-top:  17rem;
+  }
+}
+@media screen and (max-width: 695px){
+
+  .jobcard-container{
+    margin-top:  20rem;
+  }
+}
+
